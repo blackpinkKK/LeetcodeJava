@@ -28,7 +28,7 @@ public class ListNode {
 //		return val;
 //	}
 //
-//	public ListNode getNext() {
+//	public LeetcodeJava.ListNode getNext() {
 //		return next;
 //	}
 

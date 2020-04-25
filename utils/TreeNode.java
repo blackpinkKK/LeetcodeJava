@@ -58,7 +58,7 @@ public class TreeNode {
 	// @Override
 	// public String toString(){
 	// 	StringBuilder s = new StringBuilder();
-	// 	ListNode root = this;
+	// 	LeetcodeJava.ListNode root = this;
 	// 	while(root != null){
 	// 		s.append(root.val);
 	// 		s.append("->");
