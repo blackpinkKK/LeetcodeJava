@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Permute {
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3};
+        Permute obj = new Permute();
+        System.out.println(obj.permute(nums));
+    }
+
     //1.递归回溯法
     void backTracking(int i, int[] nums, List<Integer> curr, List<List<Integer>> ans,boolean[] used) {
         if (i == nums.length) {
@@ -35,11 +41,5 @@ public class Permute {
 
         backTracking(0, nums, new ArrayList<>(), ans, used);
         return ans;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
-        Permute obj = new Permute();
-        System.out.println(obj.permute(nums));
     }
 }
