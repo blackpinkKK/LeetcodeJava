@@ -25,29 +25,29 @@ public class TreeNode {
 		}
 
 		Queue<TreeNode> queue = new LinkedList<>();
-		TreeNode root = new TreeNode(nums[0]);
-		queue.offer(this);
+		TreeNode root=this;
+		queue.offer(root);
 		int i = 1;
 		while (!queue.isEmpty() && i < nums.length){
 			root = queue.poll();
 
 			if (nums[i] != null){
-				System.out.println(nums[i]);
+//				System.out.println(nums[i]);
 				root.left = new TreeNode(nums[i]);
 				queue.offer(root.left);
 			}
 			else{
-				System.out.println("Left is null");
+//				System.out.println("Left is null");
 				root.left=null;
 			}
 
-			if (nums[i+1] != null){
-				System.out.println(nums[i+1]);
+			if ((i+1<=nums.length-1) && nums[i+1] != null){
+//				System.out.println(nums[i+1]);
 				root.right = new TreeNode(nums[i+1]);
 				queue.offer(root.right);
 			}
 			else{
-				System.out.println("Right is null");
+//				System.out.println("Right is null");
 				root.right=null;
 			}
 			i=i+2;
@@ -81,18 +81,23 @@ public class TreeNode {
 		return right;
 	}
 
-	public void preOrder(TreeNode root) {
-        if (root == null) return;
-        System.out.print(root.val + " ");
-        preOrder(root.left);
-        preOrder(root.right);
+	public void preOrder() {
+        System.out.print(val + " ");
+        if(this.left!=null){
+			this.left.preOrder();
+		}
+        if(this.right!=null){
+        	this.right.preOrder();
+		}
     }
 
     public static void main(String[] args) {
         // Integer[] nums = new Integer[] {5,4,8,11,null,13,4,7,2,null,null,null,1};
-    	Integer[] nums = new Integer[] {3,2,3,null,3,null,1}; 
+//    	Integer[] nums = new Integer[] {3,2,3,null,3,null,1};
+		Integer[] nums = new Integer[]{3,null,20,15,7};
 
-        TreeNode root = new TreeNode(nums);
-        root.preOrder(root);
+
+		TreeNode root = new TreeNode(nums);
+        root.preOrder();
     }
 }
