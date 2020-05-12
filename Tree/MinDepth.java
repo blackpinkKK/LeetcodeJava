@@ -37,18 +37,18 @@ public class MinDepth {
 //
 //        int depth = 0;
 //        while (!treeNodeQueue.isEmpty()) {
-//            Pair<TreeNode,Integer> topPair = treeNodeQueue.poll();
-////            System.out.println(topPair.getKey().val);
-//            TreeNode top = topPair.getKey();
-//            depth = topPair.getValue();
-//            if (top.left == null && top.right == null) {
+//            Pair<TreeNode,Integer> frontPair = treeNodeQueue.poll();
+////            System.out.println(frontPair.getKey().val);
+//            TreeNode front = frontPair.getKey();
+//            depth = frontPair.getValue();
+//            if (front.left == null && front.right == null) {
 //                break;
 //            }
-//            if(top.left!=null){
-//                treeNodeQueue.offer(new Pair<>(top.left,depth+1));
+//            if(front.left!=null){
+//                treeNodeQueue.offer(new Pair<>(front.left,depth+1));
 //            }
-//            if(top.right!=null){
-//                treeNodeQueue.offer(new Pair<>(top.right,depth+1));
+//            if(front.right!=null){
+//                treeNodeQueue.offer(new Pair<>(front.right,depth+1));
 //            }
 //
 //        }
