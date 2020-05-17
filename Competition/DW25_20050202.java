@@ -1,10 +1,8 @@
 /**
- * 双周赛25-2020-04-25 第2题 5385. 改变一个整数能得到的最大差值
+ * 双周赛25-2020-05-02 第2题 1432. 改变一个整数能得到的最大差值
  */
 
 package LeetcodeJava.Competition;
-
-import javax.swing.plaf.nimbus.AbstractRegionPainter;
 
 public class DW25_20050202 {
     public int maxDiff(int num) {
