@@ -1,17 +1,10 @@
 /**
- * 双周赛26-2020-05-16 第4题
+ * 双周赛26-2020-05-16 第4题 数位成本和为目标值的最大数字
  */
 
 package LeetcodeJava.Competition;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator;
-import javafx.util.Pair;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
 
 public class DW26_20051604 {
     public static void main(String[] args) {
@@ -39,6 +32,7 @@ public class DW26_20051604 {
                 }
             }
         }
+
         System.out.println(Arrays.toString(f));
         if (f[target] < 0) return "0";
         StringBuilder s = new StringBuilder();

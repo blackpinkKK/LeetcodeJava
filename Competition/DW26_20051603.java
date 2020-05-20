@@ -1,5 +1,5 @@
 /**
- * 双周赛26-2020-05-16 第3题
+ * 双周赛26-2020-05-16 第3题 统计二叉树中好节点的数目
  *
  * Definition for a binary tree node.
  * public class TreeNode {
