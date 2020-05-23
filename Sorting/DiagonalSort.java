@@ -1,5 +1,5 @@
 /**
- * 349. 两个数组的交集
+ * 1329. 将矩阵按对角线排序
  */
 
 package LeetcodeJava.Sorting;
@@ -19,34 +19,6 @@ public class DiagonalSort {
     }
 
     public int[][] diagonalSort(int[][] mat) {
-//        int m=mat.length,n=mat[0].length;
-//        Map<Integer,List<Integer>> d = new HashMap<>();
-//        for(int i=0;i<m;i++){
-//            for(int j=0;j<n;j++){
-//                if(d.get(i-j)==null) d.put(i-j,new ArrayList<>());
-//                d.get(i-j).add(mat[i][j]);
-//            }
-//        }
-//
-//        for (List<Integer> integers : d.values()) {
-//            integers.sort(new Comparator<Integer>() {
-//                @Override
-//                public int compare(Integer o1, Integer o2) {
-//                    return o1.compareTo(o2);
-//                }
-//            });
-//
-//        }
-//        for(int i=0;i<m;i++){
-//            for(int j=0;j<n;j++){
-//                mat[i][j]=d.get(i-j).get(0);
-//                d.get(i-j).remove(0);
-//            }
-//        }
-//
-//        return mat;
-
-
         int m=mat.length,n=mat[0].length;
         List<Integer>[] d = new ArrayList[m+n-1];
         for(int i=0;i<m;i++){
