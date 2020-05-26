@@ -65,12 +65,15 @@ public class PeopleIndexes {
                 int pass = 0;
                 //取得 companySetList 里每个清单的 公司集合
                 for(Set set:lastCompanySetList){
-                    for(String company : favoriteCompanies.get(ind)){
-                        if(!set.contains(company)){
-//                            System.out.println(set.toString()+" contains "+company);
-                            pass++;
-                            break;
-                        }
+//                    for(String company : favoriteCompanies.get(ind)){
+//                        if(!set.contains(company)){
+////                            System.out.println(set.toString()+" contains "+company);
+//                            pass++;
+//                            break;
+//                        }
+//                    }
+                    if(!set.containsAll(favoriteCompanies.get(ind))){
+                        pass++;
                     }
                 }
                 if(pass==lastCompanySetList.size()){
