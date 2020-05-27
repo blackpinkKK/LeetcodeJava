@@ -33,8 +33,7 @@ public class MiddleNode {
     public static void main(String[] args) {
     	int[] arr = new int[]{1,2,3,4,5};
     	ListNode inputListNode = new ListNode(arr);
-    	MiddleNode mNode = new MiddleNode();
-    	ListNode solution = mNode.middleNode(inputListNode);
-    	System.out.println(solution);
+    	MiddleNode obj = new MiddleNode();
+    	System.out.println(obj.middleNode(inputListNode));
     }
 }
