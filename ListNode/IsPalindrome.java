@@ -69,9 +69,10 @@ public class IsPalindrome {
             middle = tmp;
         }
         System.out.println(slow + " "+middle);
-        //slow 是左半段的起点, middle 是右半段的起点
+        //middle 是左半段的起点, slow 是右半段的起点
         if (fast != null) {
-            // 如果节点数为 奇数， 需要先把左半段第一个节点跳过
+            // 如果节点数为 奇数，则 fast 指向链表最后一个节点，此时 slow 指向中点
+            // 需要先把右半段第一个节点跳过
             slow = slow.next;
         }
         while (slow != null && middle!=null) {

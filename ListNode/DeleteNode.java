@@ -13,10 +13,10 @@ public class DeleteNode {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{0,0};
+        int[] arr = new int[]{0,1};
         ListNode inputListNode = new ListNode(arr);
-        DeleteNode d = new DeleteNode();
-        d.deleteNode(inputListNode);
-        System.out.println(d);
+        DeleteNode obj = new DeleteNode();
+        obj.deleteNode(inputListNode);
+        System.out.println(inputListNode);
     }
 }
