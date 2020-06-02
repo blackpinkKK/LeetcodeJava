@@ -1,5 +1,5 @@
 /**
- * 双周赛27-2020-05-30 第3题 课程安排 IV
+ * 双周赛27-2020-05-30 第3题 1462. 课程安排 IV
  */
 
 package LeetcodeJava.Competition;
