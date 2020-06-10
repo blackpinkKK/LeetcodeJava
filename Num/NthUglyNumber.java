@@ -8,6 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NthUglyNumber {
+    public static void main(String[] args) {
+        NthUglyNumber i = new NthUglyNumber();
+        int solution = i.nthUglyNumber(11);
+        System.out.println(solution);
+
+    }
+
     public int nthUglyNumber(int n) {
         int[] nums = new int[n];
         nums[0]=1;
@@ -20,13 +27,6 @@ public class NthUglyNumber {
             if(nums[i]==nums[p3]*5) p3++;
         }
         return nums[n-1];
-    }
-
-    public static void main(String[] args) {
-        NthUglyNumber i = new NthUglyNumber();
-        int solution = i.nthUglyNumber(11);
-        System.out.println(solution);
-
     }
 
 }
