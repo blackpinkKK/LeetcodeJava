@@ -46,8 +46,8 @@ public class ListNode {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = new int[]{1,2,3,4,5};
-		ListNode node = new ListNode(arr);
+		int[] nums = new int[]{1,2,3,4,5};
+		ListNode node = new ListNode(nums);
 		System.out.println(node.toString());
 	}
 
