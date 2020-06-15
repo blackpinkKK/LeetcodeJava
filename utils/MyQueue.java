@@ -6,8 +6,6 @@ package LeetcodeJava.utils;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class MyQueue {
     Deque<Integer> pushStack;
@@ -65,10 +63,6 @@ public class MyQueue {
         System.out.println(obj.empty());
         System.out.println(obj.pop());
         System.out.println(obj.empty());
-//        System.out.println(obj.pop());
-//		System.out.println(obj.pop());
-//		System.out.println(obj.pop());
-//		System.out.println(obj.empty());
 
     }
 
