@@ -9,8 +9,8 @@ import java.util.List;
 
 public class NthUglyNumber {
     public static void main(String[] args) {
-        NthUglyNumber i = new NthUglyNumber();
-        int solution = i.nthUglyNumber(11);
+        NthUglyNumber obj = new NthUglyNumber();
+        int solution = obj.nthUglyNumber(11);
         System.out.println(solution);
 
     }
