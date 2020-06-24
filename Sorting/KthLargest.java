@@ -18,24 +18,24 @@ public class KthLargest {
         kthLargest.add(4);// returns 8
     }
 
-    Queue<Integer> maxHeap;
+    Queue<Integer> minHeap;
     int k;
     public KthLargest(int k, int[] nums) {
         this.k = k;
-        maxHeap = new PriorityQueue<>(k, (o1, o2) -> o1 - o2);
+        minHeap = new PriorityQueue<>(k, (o1, o2) -> o1 - o2);
         for (int i : nums) {
-            maxHeap.offer(i);
+            minHeap.offer(i);
         }
-        while (maxHeap.size() > this.k) maxHeap.poll();
+        while (minHeap.size() > this.k) minHeap.poll();
     }
 
     public int add(int val) {
-        if(maxHeap.size()<this.k) maxHeap.offer(val);
-        else if (val > maxHeap.peek()) {
-            maxHeap.offer(val);
-            maxHeap.poll();
+        if(minHeap.size()<this.k) minHeap.offer(val);
+        else if (val > minHeap.peek()) {
+            minHeap.offer(val);
+            minHeap.poll();
         }
-        return maxHeap.peek();
+        return minHeap.peek();
     }
 
 }
