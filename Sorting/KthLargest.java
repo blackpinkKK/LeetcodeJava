@@ -10,12 +10,12 @@ public class KthLargest {
     public static void main(String[] args) {
         int k = 3;
         int[] arr = {4,5,8,2};
-        KthLargest kthLargest = new KthLargest(k, arr);
-        kthLargest.add(3);// returns 4
-        kthLargest.add(5);// returns 5
-        kthLargest.add(10); // returns 5
-        kthLargest.add(9);// returns 8
-        kthLargest.add(4);// returns 8
+        KthLargest obj = new KthLargest(k, arr);
+        obj.add(3);// returns 4
+        obj.add(5);// returns 5
+        obj.add(10); // returns 5
+        obj.add(9);// returns 8
+        obj.add(4);// returns 8
     }
 
     Queue<Integer> minHeap;
