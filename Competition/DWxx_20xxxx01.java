@@ -1,5 +1,5 @@
 /**
- * 双周赛27-2020-05-30 第1题
+ * 双周赛30-2020-07-11 第1题
  */
 
 package LeetcodeJava.Competition;
