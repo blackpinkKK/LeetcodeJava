@@ -2,7 +2,7 @@
  * 1137. 第 N 个泰波那契数
  */
 
-package LeetcodeJava.Recursion;
+package LeetcodeJava.Num;
 
 public class Tribonacci {
     public static void main(String[] args) {
